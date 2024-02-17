@@ -1,7 +1,79 @@
+/* Common Css */
 * {
-  color: aliceblue;
+  margin: 0;
+  padding: 0;
 }
 
-.heading {
-  color: red;
+body {
+  font-family: "Barlow", sans-serif;
+}
+
+/* Header Css*/
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  display: inline-block;
+}
+
+.logo img {
+  width: 40%;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.main-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-menu ul li {
+  display: inline-block;
+}
+
+.logo {
+  width: 30%;
+}
+
+.main-menu ul li a {
+  display: inline-block;
+  margin: 0 20px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  text-transform: uppercase;
+  padding: 12px 15px;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+.main-menu ul li a.active-menu {
+  background: #fca311;
+  color: #000;
+}
+
+.main-menu ul li a:hover {
+  background: #fca311;
+  color: #000;
+}
+
+.header-search i {
+  color: #fff;
+}
+
+header {
+  background: #000;
+  padding: 20px 0;
 }
