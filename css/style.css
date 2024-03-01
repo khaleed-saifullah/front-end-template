@@ -8,6 +8,25 @@ body {
   font-family: "Barlow", sans-serif;
 }
 
+/* Common Component */
+.primary-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  background: #fca311;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 700;
+  transition: all 0.3s;
+  border: 1px solid transparent;
+}
+
+.primary-btn:hover {
+  background: #f19604;
+  border: 1px solid #694100;
+}
 /* Header Css*/
 
 .header-wrapper {
@@ -74,6 +93,142 @@ body {
 }
 
 header {
-  background: #000;
   padding: 20px 0;
+}
+
+/* Hero Css */
+
+.hero {
+  background: url(../assests/images/home-hero-bg.png);
+  padding-top: 250px;
+  padding-bottom: 250px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #00000030;
+  z-index: 1;
+}
+
+.hero-content {
+  z-index: 3;
+  position: relative;
+}
+
+.hero-content h3 {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #fca311;
+  margin-bottom: 20px;
+}
+
+.hero-content h2 {
+  font-size: 64px;
+  line-height: 60px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.hero-content h2 span {
+  color: #fca311;
+  display: block;
+}
+
+.hero-content p {
+  font-size: 18px;
+  line-height: 25px;
+  color: #fff;
+  max-width: 610px;
+  margin-bottom: 30px;
+}
+
+/* Secondary Hero Css */
+.secondary-hero {
+  overflow: hidden;
+}
+.secondary-hero-wrapper {
+  display: flex;
+  height: 100%;
+  gap: 8px;
+}
+
+.secondary-hero-left {
+  background: #fca311;
+  flex-basis: 65%;
+  position: relative;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.secondary-hero-right {
+  flex-basis: 35%;
+  background: #1f2324;
+  position: relative;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.secondary-hero-left::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -5000000px;
+  height: 100%;
+  background: #fca311;
+  right: 100%;
+}
+
+.secondary-hero-right::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -5000000px;
+  height: 100%;
+  background: #1f2324;
+  left: 100%;
+}
+
+.secondary-hero-left h3 {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+.secondary-hero-left h4 {
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: 700;
+  max-width: 693px;
+}
+
+.client-review {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.client-review h5 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #fff;
+  text-align: right;
+}
+
+.client-review h5 span {
+  color: #fca311;
 }
