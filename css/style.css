@@ -6,6 +6,7 @@
 
 body {
   font-family: "Barlow", sans-serif;
+  overflow-x: hidden;
 }
 
 /* Common Component */
@@ -160,6 +161,42 @@ header {
   text-transform: uppercase;
   z-index: 2;
   position: relative;
+}
+
+.hero-wrappper .slick-dots {
+  bottom: 10px;
+}
+
+.hero-wrappper .slick-dots li button::before {
+  color: #fff;
+  font-size: 12px;
+  opacity: 1;
+}
+
+.hero-wrappper .slick-dots li.slick-active button::before {
+  color: #fca311;
+}
+
+.hero-wrappper.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+.hero-wrappper .slick-next,
+.hero-wrappper .slick-prev {
+  z-index: 999999;
+}
+
+.hero-wrappper .slick-next::before,
+.hero-wrappper .slick-prev::before {
+  font-size: 30px;
+  color: #fca311;
+}
+.hero-wrappper .slick-prev {
+  left: 10px;
+}
+
+.hero-wrappper .slick-next {
+  right: 10px;
 }
 
 /* Footer CSS */
