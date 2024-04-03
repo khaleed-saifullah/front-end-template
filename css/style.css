@@ -199,6 +199,27 @@ header {
   right: 10px;
 }
 
+.hero-wrapper-content {
+  position: relative;
+}
+
+.scroll-to-bottom {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  background: #fca311;
+  position: absolute;
+  right: 600px;
+  bottom: 14px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1f2324;
+  font-size: 20px;
+  cursor: pointer;
+}
+
 /* Footer CSS */
 
 footer {

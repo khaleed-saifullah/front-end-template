@@ -5,4 +5,8 @@ $(document).ready(function () {
     nextArrow: '<i class="fas fa-arrow-circle-right slick-next"></i>',
     prevArrow: '<i class="fas fa-arrow-circle-left slick-prev"></i>',
   });
+
+  $(".scroll-to-bottom").on("click", function () {
+    $("html, body").animate({ scrollTop: $("body").height() }, "slow");
+  });
 });
