@@ -204,20 +204,20 @@ header {
 }
 
 .scroll-to-bottom {
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   display: inline-block;
   background: #fca311;
-  position: absolute;
-  right: 600px;
-  bottom: 14px;
-  border-radius: 50%;
+  position: fixed;
+  right: 5%;
+  bottom: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #1f2324;
   font-size: 20px;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 /* Footer CSS */
@@ -466,6 +466,9 @@ footer {
 
 /* Our Scope CSS */
 
+.our-scope {
+  overflow: hidden;
+}
 .our-scope-left-content {
   background: #fca311;
   padding: 60px 35px 60px 0px;

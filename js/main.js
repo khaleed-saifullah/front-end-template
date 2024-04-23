@@ -4,6 +4,14 @@ $(document).ready(function () {
     arrows: true,
     nextArrow: '<i class="fas fa-arrow-circle-right slick-next"></i>',
     prevArrow: '<i class="fas fa-arrow-circle-left slick-prev"></i>',
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          arrows: false,
+        },
+      },
+    ],
   });
 
   $(".scroll-to-bottom").on("click", function () {
